@@ -1,3 +1,5 @@
+from typing import List
+
 NUMBER_OF_SWITCHES = 1
 NUMBER_OF_HOSTS = 4
 
@@ -32,7 +34,7 @@ demarker = [
 ]
 
 
-def switches() -> list[str]:
+def switches() -> List[str]:
     """Return a list of switch names based on NUMBER_OF_SWITCHES."""
     return [f's{switch}' for switch in range(1, NUMBER_OF_SWITCHES+1)]
 
